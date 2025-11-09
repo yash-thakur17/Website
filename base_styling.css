@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #1f2937;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+ 
+.sidebar-nav ul {
+    list-style: none;
+    flex: 1;
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar-nav a {
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    display: block;
+    transition: all 200ms ease;
+}
+
+.sidebar-nav a.active,
+.sidebar-nav a:hover {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #374151;
+    border-radius: 6px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6b7280;
+}
+
+.logout-button {
+    background-color: #dc2626;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 200ms ease;
+}
+
+.logout-button:hover {
+    background-color: #b91c1c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
